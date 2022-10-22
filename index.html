@@ -390,6 +390,47 @@
                     <use href="./images/icons/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="contact-form">
+                <p class="contact-form-message">Залиште свої дані, ми вам передзвонимо</p>
+                <label class="contact-form-field">
+                    <span class="contact-form-field-title">Ім'я</span>
+                    <span class="contact-form-input-wrapper">
+                        <input name="user-name" class="contact-form-input" type="text" required>
+                        <svg class="contact-form-icon" width="12" height="12">
+                            <use href="./images/icons/sprite.svg#icon-form-user"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-field-title">Телефон</span>
+                    <span class="contact-form-input-wrapper">
+                        <input name="user-tel" class="contact-form-input" type="tel" required>
+                        <svg class="contact-form-icon" width="13" height="13">
+                            <use href="./images/icons/sprite.svg#icon-form-tel"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-field-title">Пошта</span>
+                    <span class="contact-form-input-wrapper">
+                        <input name="user-email" class="contact-form-input" type="email" required>
+                        <svg class="contact-form-icon" width="15" height="12">
+                            <use href="./images/icons/sprite.svg#icon-form-email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="contact-form-field">
+                    <span class="contact-form-field-title">Коментар</span>
+                    <textarea name="user-comment" class="contact-form-comment" placeholder="Введіть текст"></textarea>
+                </label>
+                <div class="contact-form-policy">
+                    <input name="accept-policy" class="contact-form-policy-checkbox" type="checkbox" required>
+                    <label for="" class="contact-form-policy-label">
+                        Погоджуюся з розсилкою та приймаю <a class="link" href="">Умови договору</a> 
+                    </label>
+                </div>
+                <button class="contact-form-btn-submit" type="submit">Відправити</button>
+            </form>
         </div>
     </div>
 
