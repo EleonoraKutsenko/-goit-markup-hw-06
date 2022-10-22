@@ -11,7 +11,7 @@
     --accent-btn-color: #188CE8;
     --white-border: #EEEEEE;
     --border-bottom-line: #ECECEC;
-    --footer-contact-color:#ffffff99;
+    --footer-gray-color:#ffffff99;
     --overlay-color: #2f303a66;
     --icon-gray-color: #AFB1B8;
     --icon-dark-gray-color: #ffffff1a;
@@ -431,7 +431,7 @@ footer .container {
     align-items: baseline;
 }
 
-footer .container div:first-of-type {
+footer .container div:nth-of-type(1) {
     margin-right: 70px;
 }
 
@@ -457,7 +457,7 @@ footer .container div:first-of-type {
 }
 
 .footer-contact {
-    color: var(--footer-contact-color);
+    color: var(--footer-gray-color);
 }
 
 .footer-social-title {
@@ -488,7 +488,81 @@ footer .container div:first-of-type {
     background-color: var(--accent-color);
 }
 
-/* ===modal window=== */
+footer .container div:nth-of-type(2) {
+    margin-right: 93px;
+}
+
+.subscribe-message {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 16px;
+    margin-right: 12px;
+    transition: border-color 250ms var(--timing-cubic);
+}
+
+.subscribe-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    border-color: var(--footer-gray-color);
+    /* background-color: transparent; */
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.subscribe-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    padding: 10px 28px;
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms var(--timing-cubic);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--accent-btn-color);
+    cursor: pointer;
+}
+
+.icon-send {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--white-color);
+    /* transition: background-color 250ms var(--timing-cubic); */
+}
+
+
+
+
+/* ===modal-window=== */
 
 .backdrop {
     position: fixed;
@@ -541,7 +615,7 @@ footer .container div:first-of-type {
     fill: var(--accent-color);
 }
 
-/* ===form=== */
+/* ===modal-form=== */
 
 .contact-form-message {
     font-weight: 700;
@@ -593,6 +667,11 @@ footer .container div:first-of-type {
     align-items: center;
     fill: var(--dark-text-color);
     transition: fill 250ms var(--timing-cubic);
+}
+
+.contact-form-icon:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
 }
 
 .contact-form-input:hover, .contact-form-input:focus {

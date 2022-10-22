@@ -380,6 +380,23 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <p class="subscribe-message">Підпишіться на розсилку</p>
+                <form class="subscribe-form">
+                    <label class="subscribe-form-field">
+                        <input name="subscr-email"
+                        class="subscribe-input"
+                        type="email"
+                        autocomplete="on"
+                        placeholder="E-mail">
+                    </label>
+                    <button class="subscribe-btn" type="submit">Підписатися
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./images/icons/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
 
@@ -395,7 +412,12 @@
                 <label class="contact-form-field">
                     <span class="contact-form-field-title">Ім'я</span>
                     <span class="contact-form-input-wrapper">
-                        <input name="user-name" class="contact-form-input" type="text" required>
+                        <input name="user-name" 
+                        class="contact-form-input" 
+                        type="text" 
+                        required 
+                        autocomplete="on" 
+                        minlength="2">
                         <svg class="contact-form-icon" width="12" height="12">
                             <use href="./images/icons/sprite.svg#icon-form-user"></use>
                         </svg>
@@ -404,7 +426,13 @@
                 <label class="contact-form-field">
                     <span class="contact-form-field-title">Телефон</span>
                     <span class="contact-form-input-wrapper">
-                        <input name="user-tel" class="contact-form-input" type="tel" required>
+                        <input name="user-tel" 
+                        class="contact-form-input" 
+                        type="tel" 
+                        required 
+                        autocomplete="on" 
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+                        title="XXX-XX-XXX-XX-XX">
                         <svg class="contact-form-icon" width="13" height="13">
                             <use href="./images/icons/sprite.svg#icon-form-tel"></use>
                         </svg>
@@ -413,7 +441,11 @@
                 <label class="contact-form-field">
                     <span class="contact-form-field-title">Пошта</span>
                     <span class="contact-form-input-wrapper">
-                        <input name="user-email" class="contact-form-input" type="email" required>
+                        <input name="user-email" 
+                        class="contact-form-input" 
+                        type="email" 
+                        required 
+                        autocomplete="on">
                         <svg class="contact-form-icon" width="15" height="12">
                             <use href="./images/icons/sprite.svg#icon-form-email"></use>
                         </svg>
