@@ -533,6 +533,12 @@ footer .container div:first-of-type {
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+    fill: var(--black-text-color);
+    transition: fill 250ms var(--timing-cubic);
+}
+
+.modal-close-btn:hover, .modal-close-btn:focus {
+    fill: var(--accent-color);
 }
 
 /* ===form=== */
@@ -544,6 +550,7 @@ footer .container div:first-of-type {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--dark-text-color);
+    margin-bottom: 12px;
 }
 
 .contact-form-field {
@@ -587,11 +594,13 @@ footer .container div:first-of-type {
     transition: fill 250ms var(--timing-cubic);
 }
 
-.contact-form-input:focus {
+.contact-form-input:hover, .contact-form-input:focus {
     outline: none;
     border-color: var(--accent-color);
+    cursor: pointer;
 }
 
+.contact-form-input:hover +.contact-form-icon, 
 .contact-form-input:focus + .contact-form-icon {
     fill: var(--accent-color);
 }
@@ -607,9 +616,10 @@ footer .container div:first-of-type {
     transition: border-color 250ms var(--timing-cubic);
 }
 
-.contact-form-comment:focus {
+.contact-form-comment:hover, .contact-form-comment:focus {
     outline: none;
     border-color: var(--accent-color);
+    cursor: pointer;
 }
 
 .contact-form-comment::placeholder {
@@ -619,7 +629,41 @@ footer .container div:first-of-type {
     color: var(--form-placeholder-color);
 }
 
+.contact-form-link {
+    color: var(--accent-color);
+}
 
+.contact-form-policy-checkbox:checked + .contact-form-policy-label::before {
+    background-color: var(--accent-color);
+    background-image: url(/images/icons/checked.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--accent-color);
+}
+
+.contact-form-policy-checkbox:focus + .contact-form-policy-label::before {
+    outline: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.contact-form-policy-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--gray-text-color);
+}
+
+.contact-form-policy-label::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    cursor: pointer;
+    border: 2px solid var(--dark-text-color);
+    border-radius: 2px;
+    margin-right: 8px;
+}
 
 /* ===portfolio=== */
 
