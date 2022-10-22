@@ -8,7 +8,7 @@
     --gray-text-color: #757575;
     --dark-text-color: #212121;
     --black-text-color: #000000;
-    --accent-hero-btn-color: #188CE8;
+    --accent-btn-color: #188CE8;
     --white-border: #EEEEEE;
     --border-bottom-line: #ECECEC;
     --footer-contact-color:#ffffff99;
@@ -242,7 +242,7 @@ header {
 }
 
 .hero-btn:hover, .hero-btn:focus {
-    background-color: var(--accent-hero-btn-color);
+    background-color: var(--accent-btn-color);
     cursor: pointer;
 }
 
@@ -500,11 +500,11 @@ footer .container div:first-of-type {
     transition: opacity 250ms var(--timing-cubic), visibility 250ms var(--timing-cubic);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+}
 
 .modal {
     position: absolute;
@@ -559,6 +559,7 @@ footer .container div:first-of-type {
 }
 
 .contact-form-field-title {
+    display: block;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -633,6 +634,10 @@ footer .container div:first-of-type {
     color: var(--accent-color);
 }
 
+.contact-form-policy {
+    margin-bottom: 30px;
+}
+
 .contact-form-policy-checkbox:checked + .contact-form-policy-label::before {
     background-color: var(--accent-color);
     background-image: url(/images/icons/checked.svg);
@@ -648,6 +653,8 @@ footer .container div:first-of-type {
 }
 
 .contact-form-policy-label {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -663,6 +670,30 @@ footer .container div:first-of-type {
     border: 2px solid var(--dark-text-color);
     border-radius: 2px;
     margin-right: 8px;
+}
+
+.contact-form-btn-submit {
+    display: block;
+    margin: 0 auto;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    min-width: 200px;
+    padding: 10px 52px;
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms var(--timing-cubic);
+}
+
+.contact-form-btn-submit:hover,
+.contact-form-btn-submit:focus {
+    background-color: var(--accent-btn-color);
+    cursor: pointer;
 }
 
 /* ===portfolio=== */
